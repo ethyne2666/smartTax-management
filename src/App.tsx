@@ -20,6 +20,7 @@ import InvestmentStrategies from "./pages/searchPages/InvestmentStrategies";
 import GlobalMarkets from "./pages/searchPages/GlobalMarkets";
 import InvestorRelations from "./pages/searchPages/InvestorRelations";
 import Insights from "./pages/searchPages/Insights";
+import GlobalResearch from "./pages/insights/GlobalResearch";
 
 
 
@@ -51,6 +52,8 @@ const App = () => (
         <Route path="/global-markets" element={<GlobalMarkets />} />
         <Route path="/investor-relations" element={<InvestorRelations />} />
         <Route path="/insights" element={<Insights />} />
+        <Route path="/insights/global-research" element={<GlobalResearch />} />
+
 
          
           <Route path="*" element={<NotFound />} />
