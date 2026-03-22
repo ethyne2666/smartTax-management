@@ -10,6 +10,8 @@ import {
   BarChart3, Activity, AlertCircle, User, Building2, Landmark,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 function fmt(v: number) {
   if (v >= 10000000) return `₹${(v / 10000000).toFixed(2)}Cr`;
@@ -63,7 +65,9 @@ export default function Dashboard() {
     const healthColor = calc.healthScore >= 70 ? "text-success" : calc.healthScore >= 40 ? "text-warning" : "text-destructive";
 
     return (
+      
       <AppLayout>
+          
         <div className="space-y-6">
           <DashboardHeader title="Individual Dashboard" type="individual" navigate={navigate} />
 

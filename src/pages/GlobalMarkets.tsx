@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function GlobalMarkets() {
   return (
@@ -15,6 +16,8 @@ export default function GlobalMarkets() {
         <li>✔ Global Investment Opportunities</li>
         <li>✔ Currency & Inflation Analysis</li>
       </ul>
+      <Footer />
+
     </div>
   );
 }
